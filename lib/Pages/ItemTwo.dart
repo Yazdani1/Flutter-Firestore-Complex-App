@@ -8,17 +8,20 @@ class ItemTwo extends StatefulWidget {
 }
 
 class _ItemTwoState extends State<ItemTwo> {
+  
   Future getHomePost()async{
     var firestore = Firestore.instance;
     QuerySnapshot snap = await firestore.collection("HomeData").getDocuments();
     return snap.documents;
   }
+
   Future<Null>getRegresh()async{
     await Future.delayed(Duration(seconds: 3));
     setState(() {
       getHomePost();
     });
   }
+
   List<MaterialColor>_colorItem = [
     Colors.deepOrange,
     Colors.purple,
@@ -28,16 +31,12 @@ class _ItemTwoState extends State<ItemTwo> {
     Colors.yellow,
     Colors.blueGrey
   ];
-
   MaterialColor color;
-
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-
      backgroundColor: Colors.grey,
-
       body: FutureBuilder(
           future: getHomePost(),
         builder: (context,snapshot){
