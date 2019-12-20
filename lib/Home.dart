@@ -93,9 +93,8 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      
-      body: pageOptions[_indexpage],
 
+      body: pageOptions[_indexpage],
       bottomNavigationBar: CurvedNavigationBar(
         color: Colors.deepOrange,
         buttonBackgroundColor: Colors.black,
@@ -108,13 +107,13 @@ class _HomeState extends State<Home> {
           Icon(Icons.home,size: 30.0,color: Colors.white,),
           Icon(Icons.photo,size: 30.0,color: Colors.white,)
         ],
+
         onTap: (int index){
            setState(() {
              _indexpage=index;
            });
         },
       ),
-
     );
   }
 }
