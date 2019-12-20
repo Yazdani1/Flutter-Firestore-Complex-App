@@ -93,8 +93,7 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-
-
+      
       body: pageOptions[_indexpage],
 
       bottomNavigationBar: CurvedNavigationBar(
