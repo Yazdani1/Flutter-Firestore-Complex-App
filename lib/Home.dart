@@ -33,6 +33,68 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.deepOrange,
       ),
 
+
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+
+            UserAccountsDrawerHeader(
+              accountEmail: null,
+              accountName: Text("Complex App",
+              style: TextStyle(
+                fontSize: 20.0
+              ),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.deepOrange
+              ),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(builder: (c)=>ItemOne()));
+              },
+              title: Text("First Item",
+              style: TextStyle(
+                fontSize: 17.0,
+                color: Colors.black
+              ),
+              ),
+              leading: Icon(Icons.more,color: Colors.black,),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(builder: (c)=>ItemTwo()));
+              },
+
+              title: Text("Home Item",
+                style: TextStyle(
+                    fontSize: 17.0,
+                    color: Colors.black
+                ),
+              ),
+              leading: Icon(Icons.home,color: Colors.black,),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(builder: (c)=>ItemThree()));
+              },
+              title: Text("Third Item",
+                style: TextStyle(
+                    fontSize: 17.0,
+                    color: Colors.black
+                ),
+              ),
+              leading: Icon(Icons.photo,color: Colors.black,),
+            )
+
+          ],
+        ),
+      ),
+
+
       body: pageOptions[_indexpage],
 
 
@@ -47,7 +109,7 @@ class _HomeState extends State<Home> {
         items: <Widget>[
           Icon(Icons.poll,size: 30.0,color: Colors.white,),
           Icon(Icons.home,size: 30.0,color: Colors.white,),
-          Icon(Icons.library_books,size: 30.0,color: Colors.white,)
+          Icon(Icons.photo,size: 30.0,color: Colors.white,)
         ],
         onTap: (int index){
            setState(() {
