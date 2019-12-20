@@ -36,7 +36,7 @@ class _ItemThreeState extends State<ItemThree> {
               return Center(
                 child: CircularProgressIndicator(),
               );
-              
+
             }else{
               return RefreshIndicator(
                 onRefresh: getRegresh,
@@ -44,9 +44,7 @@ class _ItemThreeState extends State<ItemThree> {
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                     itemCount: snapshot.data.length,
                     itemBuilder: (context,index){
-
                       var ourData = snapshot.data[index];
-
                      return Card(
                       elevation: 10.0,
                        shape: RoundedRectangleBorder(
