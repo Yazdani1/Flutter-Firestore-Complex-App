@@ -95,7 +95,16 @@ class _ItemTwoState extends State<ItemTwo> {
 
                                     Container(
                                       margin: EdgeInsets.only(right: 20.0),
-                                      child: Icon(Icons.more_horiz,size: 30.0,),
+                                      child: InkWell(
+                                        onTap: (){
+                                          customDialog(context,
+                                          ourData.data['image'],
+                                            ourData.data['title'],
+                                            ourData.data['des']
+                                          );
+                                        },
+                                          child: Icon(Icons.more_horiz,size: 30.0,)
+                                      ),
                                     ),
                                     
 
@@ -128,9 +137,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                 ),
                                 ),
                               )
-
-
-
                             ],
                           ),
                         ),
@@ -145,6 +151,89 @@ class _ItemTwoState extends State<ItemTwo> {
 
     );
   }
+
+  customDialog(BuildContext context,String img,String title, String des){
+
+    return showDialog(
+        context: context,
+      builder: (BuildContext contex){
+          return Dialog(
+
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20.0)
+            ),
+            child: Container(
+              height: MediaQuery.of(context).size.height/1.20,
+              width: MediaQuery.of(context).size.width,
+
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  gradient: LinearGradient(
+                      begin: Alignment.topRight,
+                      end: Alignment.bottomLeft,
+                      colors: [
+                        Colors.deepPurple,
+                        Colors.deepOrange,
+                        Colors.green
+                      ]
+                  )
+              ),
+
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+
+                    Container(
+                      height: 150.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.network(img,
+                          height: 150.0,
+                          width: MediaQuery.of(context).size.width,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(height: 6.0,),
+
+                    Container(
+                      padding: EdgeInsets.all(10.0),
+                      child: Text(title.toUpperCase(),
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(height: 6.0,),
+
+                    Container(
+                      padding: EdgeInsets.all(10.0),
+                      child: Text(des,
+                        style: TextStyle(
+                            fontSize: 18.0,
+                            color: Colors.white
+                        ),
+                      ),
+                    ),
+
+
+                  ],
+                ),
+              ),
+
+
+            ),
+          );
+      }
+    );
+
+  }
+
+
 }
 
 
