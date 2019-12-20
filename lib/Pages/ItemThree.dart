@@ -64,7 +64,7 @@ class _ItemThreeState extends State<ItemThree> {
                      );
                     }
 
-                    
+
                 ),
               );
             }
@@ -73,7 +73,6 @@ class _ItemThreeState extends State<ItemThree> {
 
     );
   }
-
   customDialog(BuildContext context,String img){
     return showDialog(
         context: context,
