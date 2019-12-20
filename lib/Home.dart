@@ -97,9 +97,7 @@ class _HomeState extends State<Home> {
 
       body: pageOptions[_indexpage],
 
-
       bottomNavigationBar: CurvedNavigationBar(
-
         color: Colors.deepOrange,
         buttonBackgroundColor: Colors.black,
         backgroundColor: Colors.green,
