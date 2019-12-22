@@ -28,7 +28,6 @@ class _ItemThreeState extends State<ItemThree> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-
       body: FutureBuilder(
           future: getGridView(),
         builder: (contex,snapshot){
@@ -36,7 +35,6 @@ class _ItemThreeState extends State<ItemThree> {
               return Center(
                 child: CircularProgressIndicator(),
               );
-
             }else{
               return RefreshIndicator(
                 onRefresh: getRegresh,
@@ -74,7 +72,7 @@ class _ItemThreeState extends State<ItemThree> {
     );
   }
 
-  
+
   customDialog(BuildContext context,String img){
     return showDialog(
         context: context,
