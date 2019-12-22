@@ -36,11 +36,12 @@ class _ItemTwoState extends State<ItemTwo> {
       body: FutureBuilder(
           future: getHomePost(),
         builder: (context,snapshot){
-
             if(snapshot.connectionState==ConnectionState.waiting){
+              
               return Center(
                 child: CircularProgressIndicator(),
               );
+
             }else{
               return RefreshIndicator(
                 onRefresh: getRegresh,
