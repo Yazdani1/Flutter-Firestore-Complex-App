@@ -37,17 +37,18 @@ class _ItemTwoState extends State<ItemTwo> {
           future: getHomePost(),
         builder: (context,snapshot){
             if(snapshot.connectionState==ConnectionState.waiting){
-              
+
               return Center(
                 child: CircularProgressIndicator(),
               );
-
             }else{
               return RefreshIndicator(
                 onRefresh: getRegresh,
                 child: ListView.builder(
+
                     itemCount: snapshot.data.length,
                   itemBuilder: (context, index){
+
                       var ourData = snapshot.data[index];
                       color=_colorItem[index % _colorItem.length];
                       return Container(
@@ -60,7 +61,6 @@ class _ItemTwoState extends State<ItemTwo> {
                           ),
                           child: Column(
                             children: <Widget>[
-
                               //first container
                               Container(
                                 child: Row(
@@ -90,7 +90,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                         ],
                                       ),
                                     ),
-
                                     Container(
                                       margin: EdgeInsets.only(right: 20.0),
                                       child: InkWell(
