@@ -30,10 +30,7 @@ class _ItemOneState extends State<ItemOne> {
     Colors.red,
     Colors.deepPurple
   ];
-
   MaterialColor color;
-
-
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
