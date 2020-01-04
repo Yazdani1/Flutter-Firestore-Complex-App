@@ -103,8 +103,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                           child: Icon(Icons.more_horiz,size: 30.0,)
                                       ),
                                     ),
-                                    
-
                                   ],
                                 ),
                               ),
