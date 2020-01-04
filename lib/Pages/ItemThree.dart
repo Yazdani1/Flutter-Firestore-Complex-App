@@ -13,12 +13,14 @@ class _ItemThreeState extends State<ItemThree> {
     QuerySnapshot snap = await firestore.collection("gridData").getDocuments();
     return snap.documents;
   }
+  
   Future<Null>getRegresh()async{
     await Future.delayed(Duration(seconds: 3));
     setState(() {
       getGridView();
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
