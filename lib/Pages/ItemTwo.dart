@@ -48,7 +48,6 @@ class _ItemTwoState extends State<ItemTwo> {
 
                     itemCount: snapshot.data.length,
                   itemBuilder: (context, index){
-
                       var ourData = snapshot.data[index];
                       color=_colorItem[index % _colorItem.length];
                       return Container(
@@ -66,7 +65,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
-
                                     Container(
                                       child: Row(
                                         children: <Widget>[
