@@ -8,15 +8,10 @@ class ItemOne extends StatefulWidget {
 
 class _ItemOneState extends State<ItemOne> {
 
-
   Future getPost()async{
-
     var firestore = Firestore.instance;
-
     QuerySnapshot snap = await firestore.collection("itemone").getDocuments();
-
     return snap.documents;
-
   }
 
   Future<Null>getRefres()async{
