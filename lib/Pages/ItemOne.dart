@@ -34,11 +34,9 @@ class _ItemOneState extends State<ItemOne> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-
       body: FutureBuilder(
           future: getPost(),
         builder: (context, snapshot){
-
             if(snapshot.connectionState == ConnectionState.waiting){
               return Center(
                 child: CircularProgressIndicator(),
@@ -49,11 +47,8 @@ class _ItemOneState extends State<ItemOne> {
                 child: ListView.builder(
                     itemCount: snapshot.data.length,
                   itemBuilder: (context,index){
-
                       var ourData = snapshot.data[index];
-
                       color=colorItems[index % colorItems.length];
-
                       return Container(
                         height: 200.0,
                         margin: EdgeInsets.all(5.0),
