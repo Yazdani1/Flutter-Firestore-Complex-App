@@ -44,7 +44,7 @@ class _ItemOneState extends State<ItemOne> {
             }else{
               return RefreshIndicator(
                 onRefresh: getRefres,
-                
+
                 child: ListView.builder(
                     itemCount: snapshot.data.length,
                   itemBuilder: (context,index){
@@ -71,8 +71,8 @@ class _ItemOneState extends State<ItemOne> {
                                   ),
                                 ),
                               ),
-                              SizedBox(width: 10.0,),
 
+                              SizedBox(width: 10.0,),
                               Expanded(
                                 flex: 2,
                                 child: Column(
