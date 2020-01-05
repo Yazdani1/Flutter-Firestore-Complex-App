@@ -153,7 +153,6 @@ class _ItemOneState extends State<ItemOne> {
 
     );
   }
-
   customDialog(BuildContext context, String img,String title,String des){
     return showDialog(
         context: context,
