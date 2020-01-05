@@ -102,6 +102,7 @@ class _HomeState extends State<Home> {
         animationCurve: Curves.easeInOut,
         animationDuration: Duration(milliseconds: 300),
         index: 1,
+        
         items: <Widget>[
           Icon(Icons.poll,size: 30.0,color: Colors.white,),
           Icon(Icons.home,size: 30.0,color: Colors.white,),
