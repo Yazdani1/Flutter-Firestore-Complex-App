@@ -112,7 +112,7 @@ class _ItemOneState extends State<ItemOne> {
                                            ourData.data['des']
                                          );
                                        },
-                                         
+
                                        child: Container(
                                          height: 40.0,
                                          margin: EdgeInsets.all(9.0),
@@ -163,10 +163,8 @@ class _ItemOneState extends State<ItemOne> {
               borderRadius: BorderRadius.circular(20.0)
             ),
             child: Container(
-
               height: MediaQuery.of(context).size.height/1.2,
               width: MediaQuery.of(context).size.width,
-              
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.0),
                 gradient: LinearGradient(
