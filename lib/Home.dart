@@ -19,11 +19,7 @@ class _HomeState extends State<Home> {
     ItemTwo(),
     ItemThree()
   ];
-
-
-
-
-
+  
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -93,7 +89,6 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-
       body: pageOptions[_indexpage],
       bottomNavigationBar: CurvedNavigationBar(
         color: Colors.deepOrange,
