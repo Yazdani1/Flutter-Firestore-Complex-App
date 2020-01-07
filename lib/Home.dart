@@ -97,19 +97,16 @@ class _HomeState extends State<Home> {
       body: pageOptions[_indexpage],
       bottomNavigationBar: CurvedNavigationBar(
         color: Colors.deepOrange,
-        
         buttonBackgroundColor: Colors.black,
         backgroundColor: Colors.green,
         animationCurve: Curves.easeInOut,
         animationDuration: Duration(milliseconds: 300),
         index: 1,
-
         items: <Widget>[
           Icon(Icons.poll,size: 30.0,color: Colors.white,),
           Icon(Icons.home,size: 30.0,color: Colors.white,),
           Icon(Icons.photo,size: 30.0,color: Colors.white,)
         ],
-
         onTap: (int index){
            setState(() {
              _indexpage=index;
