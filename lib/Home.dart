@@ -11,15 +11,13 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   int _indexpage = 1;
-
   final pageOptions = [
     ItemOne(),
     ItemTwo(),
     ItemThree()
   ];
-  
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
