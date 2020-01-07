@@ -106,7 +106,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                   ],
                                 ),
                               ),
-
                               SizedBox(height: 10.0,),
 
                               Container(
