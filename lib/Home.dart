@@ -9,7 +9,6 @@ class Home extends StatefulWidget {
   @override
   _HomeState createState() => new _HomeState();
 }
-
 class _HomeState extends State<Home> {
   int _indexpage = 1;
   final pageOptions = [
