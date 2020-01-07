@@ -16,7 +16,6 @@ class _HomeState extends State<Home> {
     ItemTwo(),
     ItemThree()
   ];
-
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
