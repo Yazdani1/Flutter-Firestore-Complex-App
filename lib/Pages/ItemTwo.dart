@@ -185,9 +185,7 @@ class _ItemTwoState extends State<ItemTwo> {
                         ),
                       ),
                     ),
-
                     SizedBox(height: 6.0,),
-
                     Container(
                       padding: EdgeInsets.all(10.0),
                       child: Text(title.toUpperCase(),
