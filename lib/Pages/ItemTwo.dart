@@ -169,7 +169,6 @@ class _ItemTwoState extends State<ItemTwo> {
                       ]
                   )
               ),
-
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
