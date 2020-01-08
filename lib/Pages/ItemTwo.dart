@@ -151,10 +151,10 @@ class _ItemTwoState extends State<ItemTwo> {
         context: context,
       builder: (BuildContext contex){
           return Dialog(
-
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0)
             ),
+            
             child: Container(
               height: MediaQuery.of(context).size.height/1.20,
               width: MediaQuery.of(context).size.width,
