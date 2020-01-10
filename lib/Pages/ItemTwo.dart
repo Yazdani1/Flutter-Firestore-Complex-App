@@ -106,8 +106,8 @@ class _ItemTwoState extends State<ItemTwo> {
                                   ],
                                 ),
                               ),
+                              
                               SizedBox(height: 10.0,),
-
                               Container(
                                 margin: EdgeInsets.all(10.0),
                                 child: ClipRRect(
@@ -145,8 +145,8 @@ class _ItemTwoState extends State<ItemTwo> {
 
     );
   }
-  customDialog(BuildContext context,String img,String title, String des){
 
+  customDialog(BuildContext context,String img,String title, String des){
     return showDialog(
         context: context,
       builder: (BuildContext contex){
@@ -154,7 +154,6 @@ class _ItemTwoState extends State<ItemTwo> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0)
             ),
-            
             child: Container(
               height: MediaQuery.of(context).size.height/1.20,
               width: MediaQuery.of(context).size.width,
