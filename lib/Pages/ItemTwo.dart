@@ -58,6 +58,7 @@ class _ItemTwoState extends State<ItemTwo> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0)
                           ),
+                          
                           child: Column(
                             children: <Widget>[
                               //first container
@@ -88,7 +89,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                         ],
                                       ),
                                     ),
-
                                     Container(
                                       margin: EdgeInsets.only(right: 20.0),
                                       child: InkWell(
@@ -106,7 +106,7 @@ class _ItemTwoState extends State<ItemTwo> {
                                   ],
                                 ),
                               ),
-                              
+
                               SizedBox(height: 10.0,),
                               Container(
                                 margin: EdgeInsets.all(10.0),
