@@ -87,6 +87,7 @@ class _ItemTwoState extends State<ItemTwo> {
                                         ],
                                       ),
                                     ),
+
                                     Container(
                                       margin: EdgeInsets.only(right: 20.0),
                                       child: InkWell(
@@ -100,7 +101,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                           child: Icon(Icons.more_horiz,size: 30.0,)
                                       ),
                                     ),
-
                                   ],
                                 ),
                               ),
