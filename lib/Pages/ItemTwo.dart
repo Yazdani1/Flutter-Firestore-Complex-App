@@ -6,6 +6,7 @@ class ItemTwo extends StatefulWidget {
   @override
   _ItemTwoState createState() => new _ItemTwoState();
 }
+
 class _ItemTwoState extends State<ItemTwo> {
   Future getHomePost()async{
     var firestore = Firestore.instance;
@@ -28,7 +29,6 @@ class _ItemTwoState extends State<ItemTwo> {
     Colors.blueGrey
   ];
   MaterialColor color;
-
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -37,7 +37,6 @@ class _ItemTwoState extends State<ItemTwo> {
           future: getHomePost(),
         builder: (context,snapshot){
             if(snapshot.connectionState==ConnectionState.waiting){
-
               return Center(
                 child: CircularProgressIndicator(),
               );
@@ -58,7 +57,6 @@ class _ItemTwoState extends State<ItemTwo> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0)
                           ),
-                          
                           child: Column(
                             children: <Widget>[
                               //first container
