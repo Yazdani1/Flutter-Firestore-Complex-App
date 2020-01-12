@@ -104,7 +104,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                   ],
                                 ),
                               ),
-
                               SizedBox(height: 10.0,),
                               Container(
                                 margin: EdgeInsets.all(10.0),
@@ -118,7 +117,6 @@ class _ItemTwoState extends State<ItemTwo> {
                                 ),
                               ),
                               SizedBox(height: 8.0,),
-
                               Container(
                                 margin: EdgeInsets.all(10.0),
                                 child: Text(ourData.data['des'],
