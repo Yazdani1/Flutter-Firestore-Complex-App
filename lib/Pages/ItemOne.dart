@@ -176,12 +176,10 @@ class _ItemOneState extends State<ItemOne> {
                     ]
                 )
               ),
-
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-
                     Container(
                       height: 150.0,
                       child: ClipRRect(
