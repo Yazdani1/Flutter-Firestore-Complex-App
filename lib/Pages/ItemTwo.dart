@@ -104,7 +104,9 @@ class _ItemTwoState extends State<ItemTwo> {
                                   ],
                                 ),
                               ),
+
                               SizedBox(height: 10.0,),
+                              
                               Container(
                                 margin: EdgeInsets.all(10.0),
                                 child: ClipRRect(
