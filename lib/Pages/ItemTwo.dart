@@ -135,13 +135,11 @@ class _ItemTwoState extends State<ItemTwo> {
                 ),
               );
             }
-
         }
       ),
 
     );
   }
-
   customDialog(BuildContext context,String img,String title, String des){
     return showDialog(
         context: context,
