@@ -18,7 +18,7 @@ class _ItemThreeState extends State<ItemThree> {
       getGridView();
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -68,6 +68,7 @@ class _ItemThreeState extends State<ItemThree> {
 
     );
   }
+  
   customDialog(BuildContext context,String img){
     return showDialog(
         context: context,
