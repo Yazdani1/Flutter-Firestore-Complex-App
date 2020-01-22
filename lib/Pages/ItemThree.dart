@@ -24,10 +24,12 @@ class _ItemThreeState extends State<ItemThree> {
       body: FutureBuilder(
           future: getGridView(),
         builder: (contex,snapshot){
+            
             if(snapshot.connectionState==ConnectionState.waiting){
               return Center(
                 child: CircularProgressIndicator(),
               );
+
             }else{
               return RefreshIndicator(
                 onRefresh: getRegresh,
